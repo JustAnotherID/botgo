@@ -6,11 +6,11 @@ import (
 	"log"
 	"time"
 
+	"github.com/JustAnotherID/botgo/dto"
+	"github.com/JustAnotherID/botgo/dto/message"
+	"github.com/JustAnotherID/botgo/event"
+	"github.com/JustAnotherID/botgo/openapi"
 	"github.com/go-redis/redis/v8"
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/dto/message"
-	"github.com/tencent-connect/botgo/event"
-	"github.com/tencent-connect/botgo/openapi"
 )
 
 // ATMessageEventHandler 实现处理 at 消息的回调

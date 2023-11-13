@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/errs"
+	"github.com/JustAnotherID/botgo/dto"
+	"github.com/JustAnotherID/botgo/errs"
 )
 
 // Me 拉取当前用户的信息

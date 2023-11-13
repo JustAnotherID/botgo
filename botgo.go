@@ -2,12 +2,12 @@
 package botgo
 
 import (
-	"github.com/tencent-connect/botgo/errs"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/openapi"
-	v1 "github.com/tencent-connect/botgo/openapi/v1"
-	"github.com/tencent-connect/botgo/token"
-	"github.com/tencent-connect/botgo/websocket/client"
+	"github.com/JustAnotherID/botgo/errs"
+	"github.com/JustAnotherID/botgo/log"
+	"github.com/JustAnotherID/botgo/openapi"
+	v1 "github.com/JustAnotherID/botgo/openapi/v1"
+	"github.com/JustAnotherID/botgo/token"
+	"github.com/JustAnotherID/botgo/websocket/client"
 )
 
 func init() {

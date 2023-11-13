@@ -3,7 +3,7 @@ package apitest
 import (
 	"testing"
 
-	"github.com/tencent-connect/botgo/dto"
+	"github.com/JustAnotherID/botgo/dto"
 )
 
 func TestWebhook(t *testing.T) {

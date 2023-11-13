@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/errs"
+	"github.com/JustAnotherID/botgo/dto"
+	"github.com/JustAnotherID/botgo/errs"
 )
 
 // CreateMessageReaction 对消息发表表情表态

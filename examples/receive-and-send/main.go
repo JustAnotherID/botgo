@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tencent-connect/botgo"
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/dto/message"
-	"github.com/tencent-connect/botgo/event"
-	"github.com/tencent-connect/botgo/token"
-	"github.com/tencent-connect/botgo/websocket"
+	"github.com/JustAnotherID/botgo"
+	"github.com/JustAnotherID/botgo/dto"
+	"github.com/JustAnotherID/botgo/dto/message"
+	"github.com/JustAnotherID/botgo/event"
+	"github.com/JustAnotherID/botgo/token"
+	"github.com/JustAnotherID/botgo/websocket"
 )
 
 // 消息处理器，持有 openapi 对象

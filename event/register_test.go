@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/JustAnotherID/botgo/dto"
 	"github.com/stretchr/testify/assert"
-	"github.com/tencent-connect/botgo/dto"
 )
 
 func TestRegisterHandlers(t *testing.T) {

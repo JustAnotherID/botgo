@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/tencent-connect/botgo/log"
+	"github.com/JustAnotherID/botgo/log"
 	"gopkg.in/yaml.v3"
 )
 

@@ -6,12 +6,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tencent-connect/botgo"
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/dto/message"
-	"github.com/tencent-connect/botgo/event"
-	"github.com/tencent-connect/botgo/openapi"
-	"github.com/tencent-connect/botgo/token"
+	"github.com/JustAnotherID/botgo"
+	"github.com/JustAnotherID/botgo/dto"
+	"github.com/JustAnotherID/botgo/dto/message"
+	"github.com/JustAnotherID/botgo/event"
+	"github.com/JustAnotherID/botgo/openapi"
+	"github.com/JustAnotherID/botgo/token"
 )
 
 func main() {

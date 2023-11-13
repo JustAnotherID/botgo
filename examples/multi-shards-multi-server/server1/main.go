@@ -7,10 +7,10 @@ import (
 
 	"examples/multi-shards-multi-server/handler"
 
-	"github.com/tencent-connect/botgo"
-	"github.com/tencent-connect/botgo/event"
-	"github.com/tencent-connect/botgo/sessions/remote"
-	"github.com/tencent-connect/botgo/token"
+	"github.com/JustAnotherID/botgo"
+	"github.com/JustAnotherID/botgo/event"
+	"github.com/JustAnotherID/botgo/sessions/remote"
+	"github.com/JustAnotherID/botgo/token"
 )
 
 func main() {

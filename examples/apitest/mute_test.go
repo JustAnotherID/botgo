@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tencent-connect/botgo/dto"
+	"github.com/JustAnotherID/botgo/dto"
 )
 
 var (

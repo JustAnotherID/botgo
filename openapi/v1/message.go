@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/errs"
-	"github.com/tencent-connect/botgo/openapi"
+	"github.com/JustAnotherID/botgo/dto"
+	"github.com/JustAnotherID/botgo/errs"
+	"github.com/JustAnotherID/botgo/openapi"
 	"github.com/tidwall/gjson"
 )
 

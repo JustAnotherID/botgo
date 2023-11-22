@@ -107,3 +107,9 @@ type WSForumAuditData ForumAuditResult
 
 // WSInteractionData 互动事件
 type WSInteractionData Interaction
+
+// WSC2CMessageData 单聊消息 payload
+type WSC2CMessageData Message
+
+// WSGroupATMessageData 群聊at消息 payload
+type WSGroupATMessageData Message

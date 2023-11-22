@@ -140,6 +140,21 @@ func InteractionHandler() event.InteractionEventHandler {
 	}
 }
 
+// C2CMessageHandler 处理单聊消息事件
+func C2CMessageHandler() event.C2CMessageEventHandler {
+	return func(event *dto.WSPayload, data *dto.WSC2CMessageData) error {
+		fmt.Println(data)
+		return nil
+	}
+}
+
+func GroupATMessageHandler() event.GroupATMessageEventHandler {
+	return func(event *dto.WSPayload, data *dto.WSGroupATMessageData) error {
+		fmt.Println(data)
+		return nil
+	}
+}
+
 func getConfigPath(name string) string {
 	_, filename, _, ok := runtime.Caller(1)
 	if ok {

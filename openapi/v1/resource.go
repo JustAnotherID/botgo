@@ -75,6 +75,18 @@ const (
 
 	settingGuideURI   uri = "/channels/{channel_id}/settingguide"
 	dmSettingGuideURI uri = "/dms/{guild_id}/settingguide"
+
+	// 私聊
+	userMessageURI uri = "/v2/users/{openid}/messages"
+	userFileURI    uri = "/v2/users/{openid}/files"
+
+	// 群聊
+	groupMessageURI uri = "/v2/groups/{group_openid}/messages"
+	groupFileURI    uri = "/v2/groups/{group_openid}/files"
+	groupMember     uri = "/v2/groups/{group_openid}/members"
+
+	// 频道
+	channelMessageURI uri = "/channels/{channel_id}/messages"
 )
 
 // getURL 获取接口地址，会处理沙箱环境判断

@@ -119,3 +119,59 @@ func (o *openAPI) PostSettingGuide(ctx context.Context,
 	}
 	return resp.Result().(*dto.Message), nil
 }
+
+// PostC2CMessage 发送私聊消息
+func (o *openAPI) PostC2CMessage(ctx context.Context, userOpenID string, message *dto.MessageToCreate) (*dto.Message, error) {
+	resp, err := o.request(ctx).
+		SetResult(dto.Message{}).
+		SetPathParam("openid", userOpenID).
+		SetBody(message).
+		Post(o.getURL(userMessageURI))
+	if err != nil {
+		return nil, err
+	}
+
+	return resp.Result().(*dto.Message), nil
+}
+
+// PostC2CFile 发送私聊多媒体消息
+func (o *openAPI) PostC2CFile(ctx context.Context, userOpenID string, message *dto.MessageToCreate) (*dto.MediaMessage, error) {
+	resp, err := o.request(ctx).
+		SetResult(dto.MediaMessage{}).
+		SetPathParam("openid", userOpenID).
+		SetBody(message).
+		Post(o.getURL(userFileURI))
+	if err != nil {
+		return nil, err
+	}
+
+	return resp.Result().(*dto.MediaMessage), nil
+}
+
+// PostGroupMessage 发送群聊消息
+func (o *openAPI) PostGroupMessage(ctx context.Context, groupOpenID string, message *dto.MessageToCreate) (*dto.Message, error) {
+	resp, err := o.request(ctx).
+		SetResult(dto.Message{}).
+		SetPathParam("group_openid", groupOpenID).
+		SetBody(message).
+		Post(o.getURL(groupMessageURI))
+	if err != nil {
+		return nil, err
+	}
+
+	return resp.Result().(*dto.Message), nil
+}
+
+// PostGroupFile 发送群聊多媒体消息
+func (o *openAPI) PostGroupFile(ctx context.Context, groupOpenID string, message *dto.MessageToCreate) (*dto.MediaMessage, error) {
+	resp, err := o.request(ctx).
+		SetResult(dto.MediaMessage{}).
+		SetPathParam("group_openid", groupOpenID).
+		SetBody(message).
+		Post(o.getURL(groupFileURI))
+	if err != nil {
+		return nil, err
+	}
+
+	return resp.Result().(*dto.MediaMessage), nil
+}

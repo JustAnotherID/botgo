@@ -51,6 +51,10 @@ var eventParseFuncMap = map[dto.OPCode]map[dto.EventType]eventParseFunc{
 		dto.EventForumAuditResult:  forumAuditHandler,
 
 		dto.EventInteractionCreate: interactionHandler,
+
+		dto.EventC2CMessageCreate: c2cMessageHandler,
+
+		dto.EventGroupAtMessageCreate: groupAtMessageHandler,
 	},
 }
 
@@ -258,6 +262,28 @@ func interactionHandler(payload *dto.WSPayload, message []byte) error {
 	}
 	if DefaultHandlers.Interaction != nil {
 		return DefaultHandlers.Interaction(payload, data)
+	}
+	return nil
+}
+
+func c2cMessageHandler(payload *dto.WSPayload, message []byte) error {
+	data := &dto.WSC2CMessageData{}
+	if err := ParseData(message, data); err != nil {
+		return err
+	}
+	if DefaultHandlers.C2CMessage != nil {
+		return DefaultHandlers.C2CMessage(payload, data)
+	}
+	return nil
+}
+
+func groupAtMessageHandler(payload *dto.WSPayload, message []byte) error {
+	data := &dto.WSGroupATMessageData{}
+	if err := ParseData(message, data); err != nil {
+		return err
+	}
+	if DefaultHandlers.GroupATMessage != nil {
+		return DefaultHandlers.GroupATMessage(payload, data)
 	}
 	return nil
 }

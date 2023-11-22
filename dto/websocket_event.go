@@ -38,6 +38,9 @@ const (
 	EventForumReplyDelete      EventType = "FORUM_REPLY_DELETE"
 	EventForumAuditResult      EventType = "FORUM_PUBLISH_AUDIT_RESULT"
 	EventInteractionCreate     EventType = "INTERACTION_CREATE"
+
+	EventC2CMessageCreate     EventType = "C2C_MESSAGE_CREATE"
+	EventGroupAtMessageCreate EventType = "GROUP_AT_MESSAGE_CREATE"
 )
 
 // intentEventMap 不同 intent 对应的事件定义
@@ -57,7 +60,8 @@ var intentEventMap = map[Intent][]EventType{
 		EventForumThreadCreate, EventForumThreadUpdate, EventForumThreadDelete, EventForumPostCreate,
 		EventForumPostDelete, EventForumReplyCreate, EventForumReplyDelete, EventForumAuditResult,
 	},
-	IntentInteraction: {EventInteractionCreate},
+	IntentInteraction:         {EventInteractionCreate},
+	IntentC2CAndGroupMessages: {EventC2CMessageCreate, EventGroupAtMessageCreate},
 }
 
 var eventIntentMap = transposeIntentEventMap(intentEventMap)

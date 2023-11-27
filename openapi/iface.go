@@ -255,11 +255,11 @@ type MessageSettingAPI interface {
 // C2CMessageAPI 单聊消息接口
 type C2CMessageAPI interface {
 	PostC2CMessage(ctx context.Context, userOpenID string, message *dto.MessageToCreate) (*dto.Message, error)
-	PostC2CFile(ctx context.Context, userOpenID string, message *dto.MessageToCreate) (*dto.MediaMessage, error)
+	PostC2CFile(ctx context.Context, userOpenID string, message *dto.MessageMediaToCreate) (*dto.MediaMessage, error)
 }
 
 // GroupMessageAPI 群聊消息接口
 type GroupMessageAPI interface {
 	PostGroupMessage(ctx context.Context, groupOpenID string, message *dto.MessageToCreate) (*dto.Message, error)
-	PostGroupFile(ctx context.Context, groupOpenID string, message *dto.MessageToCreate) (*dto.MediaMessage, error)
+	PostGroupFile(ctx context.Context, groupOpenID string, message *dto.MessageMediaToCreate) (*dto.MediaMessage, error)
 }

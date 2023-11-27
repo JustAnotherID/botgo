@@ -135,7 +135,7 @@ func (o *openAPI) PostC2CMessage(ctx context.Context, userOpenID string, message
 }
 
 // PostC2CFile 发送私聊多媒体消息
-func (o *openAPI) PostC2CFile(ctx context.Context, userOpenID string, message *dto.MessageToCreate) (*dto.MediaMessage, error) {
+func (o *openAPI) PostC2CFile(ctx context.Context, userOpenID string, message *dto.MessageMediaToCreate) (*dto.MediaMessage, error) {
 	resp, err := o.request(ctx).
 		SetResult(dto.MediaMessage{}).
 		SetPathParam("openid", userOpenID).
@@ -163,7 +163,7 @@ func (o *openAPI) PostGroupMessage(ctx context.Context, groupOpenID string, mess
 }
 
 // PostGroupFile 发送群聊多媒体消息
-func (o *openAPI) PostGroupFile(ctx context.Context, groupOpenID string, message *dto.MessageToCreate) (*dto.MediaMessage, error) {
+func (o *openAPI) PostGroupFile(ctx context.Context, groupOpenID string, message *dto.MessageMediaToCreate) (*dto.MediaMessage, error) {
 	resp, err := o.request(ctx).
 		SetResult(dto.MediaMessage{}).
 		SetPathParam("group_openid", groupOpenID).

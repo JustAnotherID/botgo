@@ -5,6 +5,7 @@ type MessageMediaToCreate struct {
 	FileType   int    `json:"file_type"`
 	URL        string `json:"url"`
 	SrvSendMsg bool   `json:"srv_send_msg"`
+	FileData   []byte `json:"file_data"`
 }
 
 type Media struct {

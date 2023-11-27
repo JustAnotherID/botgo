@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/errs"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/errs"
 )
 
 // CreateMessageReaction 对消息发表表情表态

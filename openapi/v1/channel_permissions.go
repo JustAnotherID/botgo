@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // ChannelPermissions 获取指定子频道的权限

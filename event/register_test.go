@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 	"github.com/stretchr/testify/assert"
 )
 

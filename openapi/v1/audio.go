@@ -2,9 +2,9 @@ package v1
 
 import (
 	"context"
-	"github.com/JustAnotherID/botgo/log"
+	"github.com/sealdice/botgo/log"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // PostAudio AudioAPI 接口实现

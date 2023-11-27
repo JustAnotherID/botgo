@@ -9,12 +9,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/JustAnotherID/botgo/errs"
-	"github.com/JustAnotherID/botgo/log"
-	"github.com/JustAnotherID/botgo/openapi"
-	"github.com/JustAnotherID/botgo/token"
-	"github.com/JustAnotherID/botgo/version"
 	"github.com/go-resty/resty/v2" // resty 是一个优秀的 rest api 客户端，可以极大的减少开发基于 rest 标准接口求请求的封装工作量
+	"github.com/sealdice/botgo/errs"
+	"github.com/sealdice/botgo/log"
+	"github.com/sealdice/botgo/openapi"
+	"github.com/sealdice/botgo/token"
+	"github.com/sealdice/botgo/version"
 )
 
 // MaxIdleConns 默认指定空闲连接池大小

@@ -9,12 +9,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/errs"
-	"github.com/JustAnotherID/botgo/event"
-	"github.com/JustAnotherID/botgo/log"
-	"github.com/JustAnotherID/botgo/websocket"
 	wss "github.com/gorilla/websocket" // 是一个流行的 websocket 客户端，服务端实现
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/errs"
+	"github.com/sealdice/botgo/event"
+	"github.com/sealdice/botgo/log"
+	"github.com/sealdice/botgo/websocket"
 )
 
 // DefaultQueueSize 监听队列的缓冲长度

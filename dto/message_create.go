@@ -1,6 +1,6 @@
 package dto
 
-import "github.com/JustAnotherID/botgo/dto/keyboard"
+import "github.com/sealdice/botgo/dto/keyboard"
 
 type MsgType int
 

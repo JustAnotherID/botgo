@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // Channel 拉取指定子频道信息

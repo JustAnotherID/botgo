@@ -3,7 +3,7 @@ package v1
 import (
 	"context"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // GetAPIPermissions 获取频道可用权限列表

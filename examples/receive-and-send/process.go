@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/dto/message"
-	"github.com/JustAnotherID/botgo/openapi"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/dto/message"
+	"github.com/sealdice/botgo/openapi"
 )
 
 // Processor is a struct to process message

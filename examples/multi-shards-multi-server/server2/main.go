@@ -7,10 +7,10 @@ import (
 
 	"examples/multi-shards-multi-server/handler"
 
-	"github.com/JustAnotherID/botgo"
-	"github.com/JustAnotherID/botgo/event"
-	"github.com/JustAnotherID/botgo/sessions/remote"
-	"github.com/JustAnotherID/botgo/token"
+	"github.com/sealdice/botgo"
+	"github.com/sealdice/botgo/event"
+	"github.com/sealdice/botgo/sessions/remote"
+	"github.com/sealdice/botgo/token"
 )
 
 func main() {

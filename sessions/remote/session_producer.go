@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/log"
-	"github.com/JustAnotherID/botgo/token"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/log"
+	"github.com/sealdice/botgo/token"
 )
 
 // distributeSession 根据 shards 生产初始化的 session，这里需要抢一个分布式锁，抢到锁的服务器，负责把session都生产到 redis 中

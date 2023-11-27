@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/event"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/event"
 )
 
 // ThreadEventHandler 论坛主贴事件

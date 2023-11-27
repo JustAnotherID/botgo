@@ -3,7 +3,7 @@ package v1
 import (
 	"context"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // AddPins 添加精华消息

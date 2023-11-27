@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/event"
-	"github.com/JustAnotherID/botgo/interaction/signature"
-	"github.com/JustAnotherID/botgo/log"
-	"github.com/JustAnotherID/botgo/openapi"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/event"
+	"github.com/sealdice/botgo/interaction/signature"
+	"github.com/sealdice/botgo/log"
+	"github.com/sealdice/botgo/openapi"
 )
 
 type ack struct {

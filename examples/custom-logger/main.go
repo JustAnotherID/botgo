@@ -6,12 +6,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/JustAnotherID/botgo"
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/dto/message"
-	"github.com/JustAnotherID/botgo/event"
-	"github.com/JustAnotherID/botgo/openapi"
-	"github.com/JustAnotherID/botgo/token"
+	"github.com/sealdice/botgo"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/dto/message"
+	"github.com/sealdice/botgo/event"
+	"github.com/sealdice/botgo/openapi"
+	"github.com/sealdice/botgo/token"
 )
 
 func main() {

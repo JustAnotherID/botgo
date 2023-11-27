@@ -1,9 +1,9 @@
 package botgo
 
 import (
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/sessions/local"
-	"github.com/JustAnotherID/botgo/token"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/sessions/local"
+	"github.com/sealdice/botgo/token"
 )
 
 // defaultSessionManager 默认实现的 session manager 为单机版本

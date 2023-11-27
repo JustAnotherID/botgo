@@ -1,7 +1,7 @@
 package websocket
 
 import (
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // WebSocket 需要实现的接口

@@ -3,7 +3,7 @@ package v1
 import (
 	"context"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // Guild 拉取频道信息

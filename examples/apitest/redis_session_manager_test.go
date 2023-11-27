@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/JustAnotherID/botgo"
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/event"
-	"github.com/JustAnotherID/botgo/sessions/remote"
 	"github.com/go-redis/redis/v8"
+	"github.com/sealdice/botgo"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/event"
+	"github.com/sealdice/botgo/sessions/remote"
 )
 
 func Test_redisSessionManager(t *testing.T) {

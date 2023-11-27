@@ -3,7 +3,7 @@ package search
 import (
 	"testing"
 
-	"github.com/JustAnotherID/botgo/log"
+	"github.com/sealdice/botgo/log"
 )
 
 func TestSimulateSearch(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 func (p Processor) setEmoji(ctx context.Context, channelID string, messageID string) {

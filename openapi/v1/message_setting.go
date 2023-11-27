@@ -3,7 +3,7 @@ package v1
 import (
 	"context"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // GetMessageSetting 获取频道消息频率设置信息

@@ -6,11 +6,11 @@ import (
 	"log"
 	"time"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/dto/message"
-	"github.com/JustAnotherID/botgo/event"
-	"github.com/JustAnotherID/botgo/openapi"
 	"github.com/go-redis/redis/v8"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/dto/message"
+	"github.com/sealdice/botgo/event"
+	"github.com/sealdice/botgo/openapi"
 )
 
 // ATMessageEventHandler 实现处理 at 消息的回调

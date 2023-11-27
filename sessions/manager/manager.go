@@ -5,8 +5,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/errs"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/errs"
 )
 
 // CanNotResumeErrSet 不能进行 resume 操作的错误码

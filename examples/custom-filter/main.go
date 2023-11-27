@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/JustAnotherID/botgo"
-	"github.com/JustAnotherID/botgo/openapi"
-	"github.com/JustAnotherID/botgo/token"
 	"github.com/google/uuid"
+	"github.com/sealdice/botgo"
+	"github.com/sealdice/botgo/openapi"
+	"github.com/sealdice/botgo/token"
 )
 
 func main() {

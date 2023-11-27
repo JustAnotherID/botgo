@@ -3,8 +3,8 @@ package v1
 import (
 	"context"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/log"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/log"
 )
 
 func (o *openAPI) Roles(ctx context.Context, guildID string) (*dto.GuildRoles, error) {

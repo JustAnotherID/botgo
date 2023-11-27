@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/JustAnotherID/botgo/log"
+	"github.com/sealdice/botgo/log"
 	"gopkg.in/yaml.v3"
 )
 

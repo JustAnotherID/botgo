@@ -1,4 +1,4 @@
-module github.com/JustAnotherID/botgo
+module github.com/sealdice/botgo
 
 go 1.16
 

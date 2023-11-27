@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/errs"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/errs"
 )
 
 // Me 拉取当前用户的信息

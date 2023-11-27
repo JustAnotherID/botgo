@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/JustAnotherID/botgo"
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/dto/message"
-	"github.com/JustAnotherID/botgo/event"
-	"github.com/JustAnotherID/botgo/token"
-	"github.com/JustAnotherID/botgo/websocket"
+	"github.com/sealdice/botgo"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/dto/message"
+	"github.com/sealdice/botgo/event"
+	"github.com/sealdice/botgo/token"
+	"github.com/sealdice/botgo/websocket"
 )
 
 // 消息处理器，持有 openapi 对象

@@ -3,8 +3,8 @@ package v1
 import (
 	"context"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/openapi"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/openapi"
 )
 
 // CreateDirectMessage 创建私信频道

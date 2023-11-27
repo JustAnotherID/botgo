@@ -2,12 +2,12 @@
 package botgo
 
 import (
-	"github.com/JustAnotherID/botgo/errs"
-	"github.com/JustAnotherID/botgo/log"
-	"github.com/JustAnotherID/botgo/openapi"
-	v1 "github.com/JustAnotherID/botgo/openapi/v1"
-	"github.com/JustAnotherID/botgo/token"
-	"github.com/JustAnotherID/botgo/websocket/client"
+	"github.com/sealdice/botgo/errs"
+	"github.com/sealdice/botgo/log"
+	"github.com/sealdice/botgo/openapi"
+	v1 "github.com/sealdice/botgo/openapi/v1"
+	"github.com/sealdice/botgo/token"
+	"github.com/sealdice/botgo/websocket/client"
 )
 
 func init() {

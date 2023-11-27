@@ -3,7 +3,7 @@ package botgo
 import (
 	"testing"
 
-	"github.com/JustAnotherID/botgo/openapi"
+	"github.com/sealdice/botgo/openapi"
 )
 
 func TestUseOpenAPIVersion(t *testing.T) {

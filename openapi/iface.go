@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/token"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/token"
 )
 
 // RetractMessageOption 撤回消息可选参数

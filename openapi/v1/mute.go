@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/JustAnotherID/botgo/log"
+	"github.com/sealdice/botgo/log"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // GuildMute 频道禁言

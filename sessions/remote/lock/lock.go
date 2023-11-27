@@ -6,8 +6,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/JustAnotherID/botgo/log"
 	redis "github.com/go-redis/redis/v8"
+	"github.com/sealdice/botgo/log"
 )
 
 // ErrorNotOk redis 写失败

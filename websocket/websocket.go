@@ -5,9 +5,9 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/event"
-	"github.com/JustAnotherID/botgo/log"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/event"
+	"github.com/sealdice/botgo/log"
 )
 
 var (

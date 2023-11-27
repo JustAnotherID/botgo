@@ -3,7 +3,7 @@ package v1
 import (
 	"context"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 // WS 获取带分片 WSS 接入点

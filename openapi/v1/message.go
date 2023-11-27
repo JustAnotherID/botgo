@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/errs"
-	"github.com/JustAnotherID/botgo/openapi"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/errs"
+	"github.com/sealdice/botgo/openapi"
 	"github.com/tidwall/gjson"
 )
 

@@ -3,7 +3,7 @@ package apitest
 import (
 	"testing"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 func TestGuild(t *testing.T) {

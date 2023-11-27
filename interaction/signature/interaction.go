@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/JustAnotherID/botgo/log"
+	"github.com/sealdice/botgo/log"
 )
 
 const (

@@ -1,9 +1,9 @@
 package botgo
 
 import (
-	"github.com/JustAnotherID/botgo/log"
-	"github.com/JustAnotherID/botgo/openapi"
-	"github.com/JustAnotherID/botgo/websocket"
+	"github.com/sealdice/botgo/log"
+	"github.com/sealdice/botgo/openapi"
+	"github.com/sealdice/botgo/websocket"
 )
 
 // SetLogger 设置 logger，需要实现 sdk 的 log.Logger 接口

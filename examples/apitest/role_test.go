@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/JustAnotherID/botgo/dto"
+	"github.com/sealdice/botgo/dto"
 )
 
 const (

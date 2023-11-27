@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/interaction/signature"
-	"github.com/JustAnotherID/botgo/log"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/interaction/signature"
+	"github.com/sealdice/botgo/log"
 )
 
 const maxRespBuffer = 65535

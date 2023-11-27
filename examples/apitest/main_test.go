@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/JustAnotherID/botgo"
-	"github.com/JustAnotherID/botgo/openapi"
-	"github.com/JustAnotherID/botgo/token"
+	"github.com/sealdice/botgo"
+	"github.com/sealdice/botgo/openapi"
+	"github.com/sealdice/botgo/token"
 	"gopkg.in/yaml.v2"
 )
 

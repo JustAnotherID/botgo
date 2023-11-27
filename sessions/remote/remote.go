@@ -7,14 +7,14 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/JustAnotherID/botgo/dto"
-	"github.com/JustAnotherID/botgo/log"
-	"github.com/JustAnotherID/botgo/sessions/manager"
-	"github.com/JustAnotherID/botgo/sessions/remote/lock"
-	"github.com/JustAnotherID/botgo/token"
-	"github.com/JustAnotherID/botgo/websocket"
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
+	"github.com/sealdice/botgo/dto"
+	"github.com/sealdice/botgo/log"
+	"github.com/sealdice/botgo/sessions/manager"
+	"github.com/sealdice/botgo/sessions/remote/lock"
+	"github.com/sealdice/botgo/token"
+	"github.com/sealdice/botgo/websocket"
 )
 
 const (

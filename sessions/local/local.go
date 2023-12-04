@@ -3,6 +3,7 @@ package local
 
 import (
 	"fmt"
+	wss "github.com/gorilla/websocket"
 	"time"
 
 	"github.com/sealdice/botgo/dto"
@@ -88,7 +89,11 @@ func (l *ChanManager) newConnect(session dto.Session) {
 		return
 	}
 	if err := wsClient.Listening(); err != nil {
-		log.Errorf("[ws/session] Listening err %+v", err)
+		if !wss.IsUnexpectedCloseError(err, 4009, 9000) {
+			log.Debugf("[ws/session] Listening err %+v", err)
+		} else {
+			log.Errorf("[ws/session] Listening err %+v", err)
+		}
 		currentSession := wsClient.Session()
 		// 对于不能够进行重连的session，需要清空 session id 与 seq
 		if manager.CanNotResume(err) {

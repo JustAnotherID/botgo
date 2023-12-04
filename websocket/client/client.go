@@ -89,7 +89,13 @@ func (c *Client) Listening() error {
 			return errs.ErrNeedReConnect
 		case err := <-c.closeChan:
 			// 关闭连接的错误码 https://bot.q.qq.com/wiki/develop/api/gateway/error/error.html
-			log.Errorf("%s Listening stop. err is %v", c.session, err)
+			// 吞掉 4009 的报错
+			if !wss.IsUnexpectedCloseError(err, 4009, 9000) {
+				log.Debugf("%s Listening stop. err is %v", c.session, err)
+			} else {
+				log.Errorf("%s Listening stop. err is %v", c.session, err)
+			}
+
 			// 不能够 identify 的错误
 			if wss.IsCloseError(err, 4914, 4915) {
 				err = errs.New(errs.CodeConnCloseCantIdentify, err.Error())
@@ -181,7 +187,11 @@ func (c *Client) readMessageToQueue() {
 	for {
 		_, message, err := c.conn.ReadMessage()
 		if err != nil {
-			log.Errorf("%s read message failed, %v, message %s", c.session, err, string(message))
+			if !wss.IsUnexpectedCloseError(err, 4009, 9000) {
+				log.Debugf("%s read message failed, %v, message %s", c.session, err, string(message))
+			} else {
+				log.Errorf("%s read message failed, %v, message %s", c.session, err, string(message))
+			}
 			close(c.messageQueue)
 			c.closeChan <- err
 			return

@@ -1,13 +1,14 @@
 package websocket
 
 import (
+	"context"
 	"github.com/sealdice/botgo/dto"
 )
 
 // WebSocket 需要实现的接口
 type WebSocket interface {
 	// New 创建一个新的ws实例，需要传递 session 对象
-	New(session dto.Session) WebSocket
+	New(ctx context.Context, session dto.Session) WebSocket
 	// Connect 连接到 wss 地址
 	Connect() error
 	// Identify 鉴权连接

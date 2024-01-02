@@ -2,6 +2,7 @@
 package client
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"os"
@@ -26,12 +27,13 @@ func Setup() {
 }
 
 // New 新建一个连接对象
-func (c *Client) New(session dto.Session) websocket.WebSocket {
+func (c *Client) New(ctx context.Context, session dto.Session) websocket.WebSocket {
 	return &Client{
 		messageQueue:    make(messageChan, DefaultQueueSize),
 		session:         &session,
 		closeChan:       make(closeErrorChan, 10),
 		heartBeatTicker: time.NewTicker(60 * time.Second), // 先给一个默认 ticker，在收到 hello 包之后，会 reset
+		ctx:             ctx,
 	}
 }
 
@@ -44,6 +46,7 @@ type Client struct {
 	user            *dto.WSUser
 	closeChan       closeErrorChan
 	heartBeatTicker *time.Ticker // 用于维持定时心跳
+	ctx             context.Context
 }
 
 type messageChan chan *dto.WSPayload
@@ -84,6 +87,8 @@ func (c *Client) Listening() error {
 	// handler message
 	for {
 		select {
+		case <-c.ctx.Done():
+			return nil
 		case <-resumeSignal: // 使用信号量控制连接立即重连
 			log.Infof("%s, received resumeSignal signal", c.session)
 			return errs.ErrNeedReConnect
